@@ -1,0 +1,21 @@
+{% load static %}
+<section class="wrapper">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+        role="banner" class="navbar w-nav">
+        <div class="container w-container"><a href="#" class="brand-2 w-nav-brand"><img
+                    src="{% static 'images/logo_webconverter.png'%}" width="40" height="35" alt>
+                <h1 class="heading">WEB-converter</h1>
+            </a>
+            <nav role="navigation" class="menu w-nav-menu">
+                <div class="menu__block"><a href="{% url 'profile' %}" class="menu__link w-nav-link">Профиль</a><a
+                        href="#" class="menu__link w-nav-link">Проекты</a><a href="#"
+                        class="menu__link w-nav-link">Доступы</a>
+                        <a href="{% url 'logout' %}" class="menu__link w-nav-link">Выйти</a>
+                </div>
+            </nav>
+            <div class="menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+</section>
