@@ -7,6 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('social_django.urls', namespace='social')),
     path('logout/', LogoutView.as_view(),  name='logout'),
-    path('', include('main.urls')),
+    path('', include('mainapp.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
