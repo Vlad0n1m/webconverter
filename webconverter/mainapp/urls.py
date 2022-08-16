@@ -5,7 +5,6 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('profile', views.profile, name='profile'),
     path('change_password', views.change_password, name='change_password'),
-    # path('reset_password', views.reset_password, name='reset_password'),
     path('login_user', views.login_user, name='login_user'),
     path('register', views.register, name='register'),
     # restore password urls

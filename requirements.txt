@@ -1,2 +1,2 @@
 django
-social-auth-app-django
+pip install social-auth-app-django

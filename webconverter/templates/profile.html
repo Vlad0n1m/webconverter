@@ -3,16 +3,19 @@
 {% block content %}
 {% load static %}
 {% include "navbar.html" %}
-<div class="wrapper">
+<div class="wrapper" style="border: 1px solid #eee; padding: 0.5em; margin-left: auto; margin-right: auto">
     <form action="/change_password" method="POST">
         {% csrf_token %}
         <p>
+            <h3>Username</h3>
             <input readonly type="text" value="{{user.username}}">
         </p>
         <p>
+            <h3>Email</h3>
             <input readonly type="text" value="{{user.email}}">
         </p>
         <p>
+            <h3>Password</h3>
             <input id="password" name="password" type="text" value="{{user.password}}">
             <!-- <button class="editBtn">Редактировать</button> -->
         </p>
